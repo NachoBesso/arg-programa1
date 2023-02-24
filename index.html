@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
     <title>Mi primer CV</title>
 </head>
 <body>
-    <header>
-        <h1 id="nombre">Nombre completo</h1>
-        <h2>Prefesión</h2>
+
+    <section id="hero">
         <img alt="foto de perfil- dave grohl" src="https://st.depositphotos.com/1814084/1401/i/450/depositphotos_14010764-stock-photo-dave-grohl.jpg" loading="lazy">
-        <p> En este párrafo debe ir una breve descripción de la persona, interesess cualidades etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ante nulla. Sed gravida quis ipsum in rutrum. Aliquam erat volutpat. Vivamus sagittis sodales leo quis interdum. Maecenas nisi risus, tincidunt non accumsan vel, pharetra ac nunc. Mauris maximus dui ac arcu malesuada, id bibendum nulla congue. Morbi at mauris auctor, feugiat odio vitae, vulputate ante. Mauris sed purus id metus lacinia vestibulum. Nunc rutrum congue magna, at egestas elit vehicula non</p>
-    </header>
+        <div>
+            <h1 id="nombre">DAVID ERIC GROHL</h1>
+            <h2 id="profesion">Cantante, Músico, Escritor,etc.</h2>
+            <p id="perfil"> En este párrafo debe ir una breve descripción de la persona, interesess cualidades etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ante nulla. Sed gravida quis ipsum in rutrum. Aliquam erat volutpat. Vivamus sagittis sodales leo quis interdum. Maecenas nisi risus, tincidunt non accumsan vel, pharetra ac nunc. Mauris maximus dui ac arcu malesuada, id bibendum nulla congue. Morbi at mauris auctor, feugiat odio vitae, vulputate ante. Mauris sed purus id metus lacinia vestibulum. Nunc rutrum congue magna, at egestas elit vehicula non</p> 
+        </div>
+    </section>
     <nav>
         <ul>
             <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educación">Educación</a></li>
+            <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#otros-datos">Otros datos de interés</a></li>
         </ul>
@@ -34,48 +40,62 @@
         <h3 class="puesto">Puesto 3</h3>
         <p class="fecha-puesto">01/01/2001 - Actualidad</p>
         <p class="descripcion-puesto">Descripción del npuesto deon se detallan principales responsabilidades y características de la posición como por ejemplo: personal a cargo, tareas realizadas conocimientos requeridos en el puesto modaslidad de trabajo, etc</p>
+        <hr></hr>
         <h2 id="educacion" class="exp-ed">EDUCACIÓN</h2>
         <h3 class="puesto">EDUCACION 1</h3>
         <p class="fecha-puesto">01/01/1990 31/12/1994</p>
         <p class="descripcion-puesto">Descripción de la educiación donde se detalla duración de la carrera y otros detalles como promedio por ej.</p>
 
     </section>
-    <section class="habilidades">
-        <h2>Computación</h2>
-        <div>
-            <p> Photoshop:<span>basico</span></p>
-            <progress value="25" max="100" id="nivle-phots"></progress>
+    <section id="hab-contacto" >
+         <div>
+            <h2>CONTACTO Y REDES SOCIALES</h2>
+            <ul>
+                <li><a href="htttps://www.gmail.com" target="_blank"><i class="fa fa-envelope" ></i> Email</a></li>
+                <li><a href="https://www.facebook.com/foofighters/" target="_blank"><i class="fab fa-facebook"></i>  facebook</a></li>
+                <li><a href="https://www.instagram.com/foofighters/"><i class='fab fa-instagram'></i>  Instagram</a></li>
+                <li><a href="https://twitter.com/foofighters"><i class="fab fa-twitter"></i>  Twitter</a></li>
+                <li><a href="https://www.youtube.com/user/foofighters"><i class="fab fa-youtube"></i> YouTube</a></li>
+            </ul>
         </div>
         <div>
-            <p> python:<span>básico</span></p>
-            <progress value="25" max="100" id="nivle-py"></progress>
+            <h2>HABILIDADES</h2>
+            <h3>Computación</h3>
+            <div>
+                <p class="habilidad"><i class='fas fa-object-group'></i> Photoshop:<span>basico</span></p>
+                <progress value="25" max="100" id="nivle-phots"></progress>
+            </div>
+            <div>
+                <p class="habilidad"><i class="fab fa-python"></i> python:<span>básico</span></p>
+                <progress value="25" max="100" id="nivel-py"></progress>
+            </div>
+            <div>
+                <p class="habilidad"><i class="fas fa-laptop-code"></i> Front-end:<span>medio</span></p>
+            <progress value="60" max="100" id="nivel-front"></progress>
+            </div>
+            <div>
+                <p class="habilidad"><i class="fab fa-microsoft"></i> Office:<span>Experto</span></p>
+                <progress value="98" max="100" id="nivel-office"></progress>
+                <!--<div class="nivel">
+                    <div id="nivel-photoshop"></div>
+                </div> Esta sección esra para hacer una barra de progreso con CSS 
+                pero voy a probar con la etiqueta progress-->
+            </div>
+            <h3>Idiomas</h3>
+            <div>
+                <p class="habilidad"> Español:<span class="nivel">Nativo</span></p>
+                <progress value="100" max="100" id="nivel-esp"></progress>
+            </div>
+            <div>
+                <p class="habilidad"> English:<span class="nivel">advance</span></p>
+                <progress value="85" max="100" id="nivel-en"></progress>
+            </div>
+            <div>
+                <p class="habilidad">Alemán:<span class="nivel">básico</span></p>
+            <progress value="25" max="100" id="nivel-al"></progress>
+            </div>
+            <div>
         </div>
-        <div>
-            <p> Front-end:<span>medio</span></p>
-           <progress value="60" max="100" id="nivle-front"></progress>
-        </div>
-        <div>
-            <p> Office:<span>Experto</span></p>
-            <progress value="98" max="100" id="nivle-office"></progress>
-            <!--<div class="nivel">
-                <div id="nivel-photoshop"></div>
-            </div> Esta sección esra para hacer una barra de progreso con CSS 
-            pero voy a probar con la etiqueta progress-->
-        </div>
-        <h2>Idiomas</h2>
-        <div>
-            <p> Español:<span>Nativo</span></p>
-            <progress value="100" max="100" id="nivel-esp"></progress>
-        </div>
-        <div>
-            <p> English:<span>advance</span></p>
-            <progress value="25" max="100" id="nivel-en"></progress>
-        </div>
-        <div>
-            <p>Alemán:<span>básico</span></p>
-           <progress value="60" max="100" id="nivle-front"></progress>
-        </div>
-        <div>
     </section>
 </body>
 </html>
