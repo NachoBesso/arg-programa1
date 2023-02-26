@@ -7,6 +7,7 @@ html{
     font-size: 16px;
     background-color: #2e2e2e;
     color: #c5baba;
+    box-sizing: border-box;
 }
 #hero{
     display:flex;
@@ -19,11 +20,25 @@ html{
     top: 20px;
 
 }
+#hero img{
+  height:35vh;
+  width: auto;
+}
+#hero div{
+  display: grid;
+  justify-content: flex-end;
+  margin-left: 2%;
+  top: 10%;
+}
 nav {
   width: 100vw;
   /*max-width: 300px;*/
-  height: 50px;
+  height: 35px;
   background-color:#686464;
+  position:sticky;
+  top:36vh;
+  padding:0.2rem;
+  font-size: 1.2rem;
   
 }
 nav > ul {
@@ -34,23 +49,53 @@ nav > ul {
   padding-inline-start: 0;
   margin-block: 0;
   height: 100%;
+  font-family: "Passion One", cursive;
 }
 nav > ul > li {
   color: #fafafa ;
-  margin: 0 0.2rem;
+  /*margin: 0.2rem 0.2rem;*/
   padding: 0.2rem;
   display: block;
-  transition: transform 0.5s ease-in-out 0ms;
   
 }
 nav > ul > li:hover {
   background-color: #fafafa;
   color: #686464;
   cursor: pointer;
+  
+}
+ul > li {
+  transition: transform 0.5s ease-in-out 0ms;
+}
+ul > li:hover{
   transform: scale(1.25);
 }
 nav ul li:visited{
   color:#fafafa;
+}
+li>a {
+  text-decoration: none;
+  color: inherit;
+}
+main{
+  display: grid;
+  grid-template-columns: 33% auto;
+  justify-content: space-around;
+  
+}
+#hab-contacto{
+  margin: 15px 10%;
+  padding:10px;
+}
+#hab-contacto ul{
+  list-style: none;
+  font-size: 1rem;
+  /*text-indent: 20px;*/
+  height: 200px;
+  display: grid;
+  justify-content: flex-start;
+  margin-top: 2%;
+  margin-left: 20px;
 }
 #profesion, #perfil{
     font-family: "Staatliches";
@@ -59,10 +104,9 @@ nav ul li:visited{
 
 
 
-h1{
-    font-weight: 700;
-}
 
-  img{
-    height: 300px;
+@media (prefers-reduced-motion: no-preference){
+  * {
+    scroll-behavior: smooth;
   }
+}
