@@ -12,27 +12,33 @@
     <title>Mi primer CV</title>
 </head>
 <body>
-
+    <nav>
+        <ul>
+            <li><a href="#redes">REDES</a></li>
+            <li><a href="#habilidades">HABILIDADES</a></li>
+            <li><a href="#experiencia">EXPERIENCIA</a></li>
+            <li><a href="#educacion">EDUCACIÓN</a></li>
+            <li><a href="#otros-datos">OTROS DATOS</a></li>
+        </ul>
+    </nav>
     <section id="hero">
         <img alt="foto de perfil- dave grohl" src="https://st.depositphotos.com/1814084/1401/i/450/depositphotos_14010764-stock-photo-dave-grohl.jpg" loading="lazy">
         <div>
             <h1 id="nombre">DAVID ERIC GROHL</h1>
             <h2 id="profesion">Cantante, Músico, Escritor,etc.</h2>
             <p id="perfil"> En este párrafo debe ir una breve descripción de la persona, interesess cualidades etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ante nulla. Sed gravida quis ipsum in rutrum. Aliquam erat volutpat. Vivamus sagittis sodales leo quis interdum. Maecenas nisi risus, tincidunt non accumsan vel, pharetra ac nunc. Mauris maximus dui ac arcu malesuada, id bibendum nulla congue. Morbi at mauris auctor, feugiat odio vitae, vulputate ante. Mauris sed purus id metus lacinia vestibulum. Nunc rutrum congue magna, at egestas elit vehicula non</p> 
+            <span class="hide" id="ocultar_txt">
+                <p>Nunc massa sem, tempus et consectetur in, imperdiet quis nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum suscipit vitae nisi a varius. Proin pulvinar blandit est nec feugiat. Proin id tellus eget orci tempus aliquet. Etiam vel nisl in dolor aliquam eleifend. Suspendisse et rhoncus mauris, eget semper lectus. Vivamus cursus suscipit neque, a dapibus erat ultrices quis. Cras lobortis iaculis cursus. Nullam aliquet a arcu id gravida. Ut id arcu nulla. Sed in purus porttitor, tempor purus sed, ornare metus. Ut mollis lacus nisi, ut tristique diam mattis quis. Vivamus bibendum ut libero sed viverra.</p>
+            </span>
+            <button class="leer-mas" id="boton_ocultar_txt">Leer más</button>
         </div>
+        <script src="funciones.js"></script>
     </section>
-    <nav>
-        <ul>
-            <li><a href="#experiencia">EXPERIENCIA</a></li>
-            <li><a href="#educacion">EDUCACIÓN</a></li>
-            <li><a href="#habilidades">HABILIDADES</a></li>
-            <li><a href="#otros-datos">OTROS DATOS</a></li>
-        </ul>
-    </nav>
+  
     <main>
         <section id="hab-contacto" >
-            <div>
-                <h2>CONTACTO Y REDES SOCIALES</h2>
+            <div  id="redes" class="contacto">
+                <h2>CONTACTO Y REDES</h2>
                 <ul>
                     <li><a href="htttps://www.gmail.com" target="_blank"><i class="fa fa-envelope" ></i> Email</a></li>
                     <li><a href="https://www.facebook.com/foofighters/" target="_blank"><i class="fab fa-facebook"></i>  facebook</a></li>
@@ -41,23 +47,23 @@
                     <li><a href="https://www.youtube.com/user/foofighters"><i class="fab fa-youtube"></i> YouTube</a></li>
                 </ul>
             </div>
-            <div>
+            <div id="habilidades" class="habilidades">
                 <h2>HABILIDADES</h2>
                 <h3>Computación</h3>
                 <div>
-                    <p class="habilidad"><i class='fas fa-object-group'></i> Photoshop: <span>basico</span></p>
+                    <p class="habilidad"><i class='fas fa-object-group'></i> Photoshop: <span class="nivel">basico</span></p>
                     <progress value="25" max="100" id="nivle-phots"></progress>
                 </div>
                 <div>
-                    <p class="habilidad"><i class="fab fa-python"></i> python: <span>básico</span></p>
+                    <p class="habilidad"><i class="fab fa-python"></i> python: <span class="nivel">básico</span></p>
                     <progress value="25" max="100" id="nivel-py"></progress>
                 </div>
                 <div>
-                    <p class="habilidad"><i class="fas fa-laptop-code"></i> Front-end: <span>medio</span></p>
+                    <p class="habilidad"><i class="fas fa-laptop-code"></i> Front-end: <span class="nivel">medio</span></p>
                 <progress value="60" max="100" id="nivel-front"></progress>
                 </div>
                 <div>
-                    <p class="habilidad"><i class="fab fa-microsoft"></i> Office: <span>Experto</span></p>
+                    <p class="habilidad"><i class="fab fa-microsoft"></i> Office: <span class="nivel">Experto</span></p>
                     <progress value="98" max="100" id="nivel-office"></progress>
                     <!--<div class="nivel">
                         <div id="nivel-photoshop"></div>
@@ -81,22 +87,32 @@
             </div>
         </section>
         <section class="exp-ed">    
-            <h2 id="experiencia" class="exp-ed">EXPERIENCIA</h2>
-            <h3 class="puesto">Puesto 1</h3>
-            <p class="fecha-puesto">01/01/1990 31/12/1994</p>
-            <p class="descripcion-puesto">Descripción del npuesto deon se detallan principales responsabilidades y características de la posición como por ejemplo: personal a cargo, tareas realizadas conocimientos requeridos en el puesto modaslidad de trabajo, etc</p>
-            <h3 class="puesto">Puesto 2</h3>
-            <p class="fecha-puesto">01/01/1995 31/12/2000</p>
-            <p class="descripcion-puesto">Descripción del npuesto deon se detallan principales responsabilidades y características de la posición como por ejemplo: personal a cargo, tareas realizadas conocimientos requeridos en el puesto modaslidad de trabajo, etc</p>
-            <h3 class="puesto">Puesto 3</h3>
-            <p class="fecha-puesto">01/01/2001 - Actualidad</p>
-            <p class="descripcion-puesto">Descripción del npuesto deon se detallan principales responsabilidades y características de la posición como por ejemplo: personal a cargo, tareas realizadas conocimientos requeridos en el puesto modaslidad de trabajo, etc</p>
-            <hr></hr>
-            <h2 id="educacion" class="exp-ed">EDUCACIÓN</h2>
-            <h3 class="puesto">EDUCACION 1</h3>
-            <p class="fecha-puesto">01/01/1990 31/12/1994</p>
-            <p class="descripcion-puesto">Descripción de la educiación donde se detalla duración de la carrera y otros detalles como promedio por ej.</p>
-
+            <div id="experiencia" class="pestaña"><h2>EXPERIENCIA</h2></div>
+            <div class="detalle">
+                <h3>Puesto 1</h3>
+                <p class="fecha-puesto">01/01/1990 31/12/1994</p>
+                <p class="descripcion-puesto">Descripción del npuesto deon se detallan principales responsabilidades y características de la posición como por ejemplo: personal a cargo, tareas realizadas conocimientos requeridos en el puesto modaslidad de trabajo, etc</p>
+            </div>
+            <div class="detalle">
+                <h3>Puesto 2</h3>
+                <p class="fecha-puesto">01/01/1995 31/12/2000</p>
+                <p class="descripcion-puesto">Descripción del npuesto deon se detallan principales responsabilidades y características de la posición como por ejemplo: personal a cargo, tareas realizadas conocimientos requeridos en el puesto modaslidad de trabajo, etc</p>
+            </div>
+            <div class="detalle">
+                <h3>Puesto 3</h3>
+                <p class="fecha-puesto">01/01/2001 - Actualidad</p>
+                <p class="descripcion-puesto">Descripción del npuesto deon se detallan principales responsabilidades y características de la posición como por ejemplo: personal a cargo, tareas realizadas conocimientos requeridos en el puesto modaslidad de trabajo, etc</p>
+            </div>
+            <div id="educacion" class="pestaña"><h2>EDUCACIÓN</h2></div>
+            <div class="detalle">
+                <h3>EDUCACION 1</h3>
+                <p class="fecha-puesto">01/01/1990 31/12/1994</p>
+                <p class="descripcion-puesto">Descripción de la educiación donde se detalla duración de la carrera y otros detalles como promedio por ej.</p>
+            </div>
+            <div id="otros-datos" class="pestaña"><h2>OTROS DATOS DE INTERÉS</h2></div>
+            <div class="detalle">
+                
+            </div>
         </section>
        
     </main>

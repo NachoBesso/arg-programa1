@@ -1,7 +1,14 @@
+@media (prefers-reduced-motion: no-preference){
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+ 
 }
 html{
     font-size: 16px;
@@ -11,17 +18,18 @@ html{
 }
 #hero{
     display:flex;
-    height: 35vh;
+    height: 40vh;
     background-color: #2e2e2e;
     color: #c5baba;
     font-family: "Passion One", cursive;
-    padding:10px;
-    position: sticky;
-    top: 20px;
-
+    /*position: sticky;*/
+    top:0;
+    overflow: hidden;
+   
 }
+
 #hero img{
-  height:35vh;
+  height:40vh;
   width: auto;
 }
 #hero div{
@@ -29,6 +37,24 @@ html{
   justify-content: flex-end;
   margin-left: 2%;
   top: 10%;
+  width:900px;
+}
+#nombre{
+  font-size: 2rem;
+  font-weight: 700;
+}
+#profesion{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#hero p{
+  text-align: justify;
+  padding:5px;
+}
+i{
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #686464;
 }
 nav {
   width: 100vw;
@@ -36,7 +62,7 @@ nav {
   height: 35px;
   background-color:#686464;
   position:sticky;
-  top:36vh;
+  top:0;
   padding:0.2rem;
   font-size: 1.2rem;
   
@@ -79,34 +105,117 @@ li>a {
 }
 main{
   display: grid;
-  grid-template-columns: 33% auto;
+  grid-template-columns: 25% auto;
   justify-content: space-around;
   
 }
+#hab-contacto, .exp-ed{
+  height: 1000px;
+  padding:0;
+}
+
 #hab-contacto{
-  margin: 15px 10%;
-  padding:10px;
+  background-color: #cf0505;
+  color: #e4ece8;
+}
+
+#hab-contacto h2{
+  width: 100%;
+  margin: 5px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding:0;
+}
+
+#hab-contacto h3{
+  width: 100%;
+  margin: 5% 0;
+  padding:0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.contacto, .habilidades{
+  margin-top: 10px;
+  margin-left: 10%;
+ 
 }
 #hab-contacto ul{
   list-style: none;
-  font-size: 1rem;
+  font-size: 1.25rem;
   /*text-indent: 20px;*/
-  height: 200px;
+  height:200px;
   display: grid;
   justify-content: flex-start;
-  margin-top: 2%;
-  margin-left: 20px;
-}
-#profesion, #perfil{
-    font-family: "Staatliches";
-    
+  margin-left: 30px;
 }
 
 
+.habilidades{
+  display:grid;
+  justify-content: flex-start;
+  height: 400px;
+  font-size: 1.2rem;
+}
+.habilidad{
+  font-weight: bold;
+  text-align: center;
+  padding: 2px;
+}
+.nivel{
+  font-style: italic;
+  font-weight: lighter;
+}
 
+/*sección de estilos de experiencia y educación*/
 
-@media (prefers-reduced-motion: no-preference){
-  * {
-    scroll-behavior: smooth;
+.exp-ed h2{
+  text-indent: 5%;
+  font-size: 1.5rem;
+  padding-top: 5px;
+}
+.pestaña{
+  width: 70%;
+  height:40px;
+  background-color: #cf0505;
+  box-shadow: 10px 10px 10px #500303cc;
+  padding:0;
+}
+.detalle{
+  padding: 10px;
+  width: 70%;
+  font-size: 1.15rem;
+}
+.fecha-puesto{
+  font-weight: lighter;
+  font-style: italic ;
+}
+.leer-mas{
+  display:none;
+}
+
+/*Esta sección es para  hacer el sitio responsive*/
+@media (max-width: 976px){
+
+  .hide{
+    display:none;
+  }
+
+  .show{
+    display: block;
+  }
+  .leer-mas{
+    background-color: #4caf50;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px #4caf50;
+    cursor: pointer;
+    display: block;
+  }
+  #hero{
+    height: auto;
   }
 }
